@@ -2,6 +2,8 @@ package daoIMP;
 
 import bean.Student;
 import dao.StudentDAO;
+
+import java.sql.PreparedStatement;
 import java.util.List;
 
 public class StudentDAOIMP extends BaseDao implements StudentDAO {
@@ -12,6 +14,12 @@ public class StudentDAOIMP extends BaseDao implements StudentDAO {
         update(sql,s.getID(),s.getName());
     }
 
+
+    public void inserts(Student stu){
+        String sql = "INSERT INTO student (id, name) values (?,?)";
+        PreparedStatement pstmt = null;
+
+    }
     public void update(Student s) {
         //作业
         String sql = "update student set name = ? where id = ?";

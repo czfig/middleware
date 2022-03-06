@@ -1,11 +1,6 @@
 import bean.Student;
 import daoIMP.StudentDAOIMP;
 import org.junit.Test;
-
-/**
- * @author jiang
- * @date 2022/3/2 21:49
- */
 public class StudentDAOIMPTest {
     private StudentDAOIMP dao = new StudentDAOIMP();
     @Test
