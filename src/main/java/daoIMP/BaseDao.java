@@ -10,10 +10,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * @author jiang
- * @date 2021/11/17 20:04
- */
+
 public abstract class BaseDao {
     private QueryRunner queryRunner = new QueryRunner();
 
